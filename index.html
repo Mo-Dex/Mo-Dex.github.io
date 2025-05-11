@@ -134,8 +134,10 @@
   <div class="columns is-centered has-text-centered">
     <div class="column is-four-fifths">
       <h2 class="title is-3">Overview</h2>
-      <div class="image">
-        <img src="./static/images/gifs/head_movie.gif" alt="Overview of MoDex" style="width: 100%; height: auto;">
+      <div class="video-container">
+        <video controls loop muted playsinline style="width: 100%; height: auto;">
+          <source src="./static/videos/teaser.mp4" type="video/mp4">
+        </video>
       </div>
     </div>
   </div>
@@ -150,9 +152,12 @@
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
+        <div class="image">
+          <img src="./static/images/teaser.png" alt="Teaser of MoDex" style="width: 100%; height: auto;">
+        </div>
         <div class="content has-text-justified">
           <p>
-            Controlling hands in high-dimensional action space has been a longstanding challenge, yet humans naturally perform dexterous tasks with ease. In this paper, we draw inspiration from the concept of <i>internal model</i> exhibited in human behavior and reconsider dexterous hands as learnable systems. Specifically, we introduce MoDex, a framework that includes a couple of neural networks (NNs) capturing the dynamical characteristics of hands and a bidirectional planning approach, which demonstrates both training and planning efficiency. To show the versatility of MoDex, we further integrate it with an external model to manipulate in-hand objects and a large language model (LLM) to generate various gestures in both simulation and real world. Extensive experiments on different dexterous hands address the data efficiency in learning a new task and the transferability between different tasks. 
+            Controlling hands in high-dimensional action space has been a longstanding challenge, yet humans naturally perform dexterous tasks with ease. In this paper, we draw inspiration from the concept of <b>internal model</b> exhibited in human behavior and reconsider dexterous hands as learnable systems. Specifically, we introduce MoDex, a framework that includes a couple of neural networks (NNs) capturing the dynamical characteristics of hands and a bidirectional planning approach, which demonstrates both training and planning efficiency. To show the versatility of MoDex, we further integrate it with an external model to manipulate in-hand objects and a large language model (LLM) to generate various gestures in both simulation and real world. Extensive experiments on different dexterous hands address the data efficiency in learning a new task and the transferability between different tasks. 
           </p>
         </div>
       </div>
@@ -162,11 +167,13 @@
   <br>
   <div class="container is-max-desktop">
     <!-- Method -->
-    <!-- <div class="columns is-centered has-text-centered">
+    <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Method</h2>
-        <div class="image">
-          <img src="./static/images/method.png" alt="Method of MoDex" style="width: 100%; height: auto;">
+        <div class="video-container">
+          <video autoplay loop muted playsinline style="width: 100%; height: auto;">
+            <source src="./static/videos/method.mp4" type="video/mp4">
+          </video>
         </div>
         <br>
         <div class="content has-text-justified">
@@ -176,7 +183,7 @@
             <li>We propose to realize data-efficient in-hand manipulation by learning decomposed system dynamics models.</li>
           </ul>
         </div>
-      </div> -->
+      </div>
     </div>
     <!-- Method -->
   </div>  
@@ -187,21 +194,14 @@
 
 <section class="section">
   <div class="columns is-centered">
-    <h2 class="title is-3">Main Results</h2>
+    <h2 class="title is-3">Simulation Experiments</h2>
   </div>
   <div class="container is-max-desktop">
-    <!-- <h3 class="title is-4">Hand Tips Reach</h3>
-    <div class="columns">
-      <div class="column">
-        <img src="./static/images/reach_tab1.png" alt="Quasi-static setting">
-        <h5 class="title is-6 has-text-centered">Quasi-static Setting</h5>
-      </div>
-      <div class="column">
-        <img src="./static/images/reach_tab2.png" alt="Sequential setting">
-        <h5 class="title is-6 has-text-centered">Sequential Setting</h5>
-      </div>
-    </div> -->
-    <h4 class="title is-5">Quasi-static</h4>
+    <h3 class="title is-4">Fingertip Reach</h3>
+    <div class="column">
+      <img src="./static/images/reach_result.png" alt="Reach Results" style="width: 80%; height: auto; display: block; margin-left: auto; margin-right: auto;">
+    </div>
+    <h4 class="title is-5">Quasi-static Videos</h4>
     <div class="columns">
       <div class="column">
         <img src="./static/images/gifs/image11.gif" alt="">
@@ -216,7 +216,7 @@
         <img src="./static/images/gifs/image13.gif" alt="">
       </div>
     </div>
-    <h4 class="title is-5">Sequential</h4>
+    <h4 class="title is-5">Sequential Videos</h4>
     <div class="columns">
       <div class="column">
         <img src="./static/images/gifs/image16.gif" alt="">
@@ -235,92 +235,8 @@
   <br>
   <br>
   <div class="container is-max-desktop">
-    <h3 class="title is-4">Gesture Generation</h3>
-    <div class="columns is-centered">
-      <div class="column">
-        <img src="./static/images/gestures.png" alt="gestures" style="width: 100%; height: auto; display: block; margin-left: auto; margin-right: auto;">
-      </div>
-    </div>
-    <div class="hero-body">
-      <div class="container">
-        <h4 class="title is-5">Allegro</h4>
-        <div id="results-carousel" class="carousel results-carousel">
-          <div class="g_a_1">
-            <img src="./static/images/gifs/image19.gif" alt="" style="width: 98%; height: auto; display: block; margin-left: auto; margin-right: auto;">
-          </div>
-          <div class="g_a_2">
-            <img src="./static/images/gifs/image20.gif" alt="" style="width: 98%; height: auto; display: block; margin-left: auto; margin-right: auto;">
-          </div>
-          <div class="g_a_3">
-            <img src="./static/images/gifs/image21.gif" alt="" style="width: 98%; height: auto; display: block; margin-left: auto; margin-right: auto;">
-          </div>
-          <div class="g_a_4">
-            <img src="./static/images/gifs/image22.gif" alt="" style="width: 98%; height: auto; display: block; margin-left: auto; margin-right: auto;">
-          </div>
-          <div class="g_a_5">
-            <img src="./static/images/gifs/image23.gif" alt="" style="width: 98%; height: auto; display: block; margin-left: auto; margin-right: auto;">
-          </div>
-          <div class="g_a_6">
-            <img src="./static/images/gifs/image24.gif" alt="" style="width: 98%; height: auto; display: block; margin-left: auto; margin-right: auto;">
-          </div>
-        </div>
-      </div>
-      <br>
-      <div class="container">
-        <h4 class="title is-5">Shadowhand</h4>
-        <div id="results-carousel" class="carousel results-carousel">
-          <div class="g_a_1">
-            <img src="./static/images/gifs/image31.gif" alt="" style="width: 98%; height: auto; display: block; margin-left: auto; margin-right: auto;">
-          </div>
-          <div class="g_a_2">
-            <img src="./static/images/gifs/image32.gif" alt="" style="width: 98%; height: auto; display: block; margin-left: auto; margin-right: auto;">
-          </div>
-          <div class="g_a_3">
-            <img src="./static/images/gifs/image33.gif" alt="" style="width: 98%; height: auto; display: block; margin-left: auto; margin-right: auto;">
-          </div>
-          <div class="g_a_4">
-            <img src="./static/images/gifs/image34.gif" alt="" style="width: 98%; height: auto; display: block; margin-left: auto; margin-right: auto;">
-          </div>
-          <div class="g_a_5">
-            <img src="./static/images/gifs/image35.gif" alt="" style="width: 98%; height: auto; display: block; margin-left: auto; margin-right: auto;">
-          </div>
-          <div class="g_a_6">
-            <img src="./static/images/gifs/image36.gif" alt="" style="width: 98%; height: auto; display: block; margin-left: auto; margin-right: auto;">
-          </div>
-        </div>
-      </div>
-      <br>
-      <div class="container">
-        <h4 class="title is-5">Myohand</h4>
-        <div id="results-carousel" class="carousel results-carousel">
-          <div class="g_a_1">
-            <img src="./static/images/gifs/image25.gif" alt="" style="width: 98%; height: auto; display: block; margin-left: auto; margin-right: auto;">
-          </div>
-          <div class="g_a_2">
-            <img src="./static/images/gifs/image26.gif" alt="" style="width: 98%; height: auto; display: block; margin-left: auto; margin-right: auto;">
-          </div>
-          <div class="g_a_3">
-            <img src="./static/images/gifs/image27.gif" alt="" style="width: 98%; height: auto; display: block; margin-left: auto; margin-right: auto;">
-          </div>
-          <div class="g_a_4">
-            <img src="./static/images/gifs/image28.gif" alt="" style="width: 98%; height: auto; display: block; margin-left: auto; margin-right: auto;">
-          </div>
-          <div class="g_a_5">
-            <img src="./static/images/gifs/image29.gif" alt="" style="width: 98%; height: auto; display: block; margin-left: auto; margin-right: auto;">
-          </div>
-          <div class="g_a_6">
-            <img src="./static/images/gifs/image30.gif" alt="" style="width: 98%; height: auto; display: block; margin-left: auto; margin-right: auto;">
-          </div>
-        </div>
-    </div>
-
-  </div>
-  <br>
-  <br>
-  <div class="container is-max-desktop">
-    <h3 class="title is-4">Object Orientation</h3>
-    <!-- <img src="./static/images/in_hand.png" alt="Object orienration"> -->
-    <h5 class="title is-6 has-text-centered">Object Orientation Tasks</h5>
+    <h3 class="title is-4">In-Hand Manipulation</h3>
+    <img src="./static/images/inhand_curves.png" alt="Object orienration">
     <br>
     <div class="columns">
       <div class="column">
@@ -332,11 +248,171 @@
       <div class="column">
         <img src="./static/images/gifs/stick_.gif" alt="">
       </div>
+    </div>
   </div>
+  <br>
+  <br>
+  <div class="container is-max-desktop">
+    <h3 class="title is-4">Gesture Generation</h3>
+    <div class="columns is-centered">
+      <div class="column">
+        <img src="./static/images/gestures.png" alt="gestures" style="width: 80%; height: auto; display: block; margin-left: auto; margin-right: auto;">
+      </div>
+    </div>
+    <div class="hero-body">
+      <div class="container">
+        <h4 class="title is-5">Allegro</h4>
+        <div id="results-carousel" class="carousel results-carousel">
+          <div class="g_a_1">
+            <p class="has-text-centered" style="margin-top: 10px;">Thumb-up</p>
+            <img src="./static/images/gifs/image19.gif" alt="" style="width: 98%; height: auto; display: block; margin-left: auto; margin-right: auto;">
+          </div>
+          <div class="g_a_2">
+            <p class="has-text-centered" style="margin-top: 10px;">Finger-gun</p>
+            <img src="./static/images/gifs/image20.gif" alt="" style="width: 98%; height: auto; display: block; margin-left: auto; margin-right: auto;">
+          </div>
+          <div class="g_a_3">
+            <p class="has-text-centered" style="margin-top: 10px;">OK</p>
+            <img src="./static/images/gifs/image21.gif" alt="" style="width: 98%; height: auto; display: block; margin-left: auto; margin-right: auto;">
+          </div>
+          <div class="g_a_4">
+            <p class="has-text-centered" style="margin-top: 10px;">Rock&Roll</p>
+            <img src="./static/images/gifs/image22.gif" alt="" style="width: 98%; height: auto; display: block; margin-left: auto; margin-right: auto;">
+          </div>
+          <div class="g_a_5">
+            <p class="has-text-centered" style="margin-top: 10px;">Scissors</p>
+            <img src="./static/images/gifs/image23.gif" alt="" style="width: 98%; height: auto; display: block; margin-left: auto; margin-right: auto;">
+          </div>
+          <div class="g_a_6">
+            <p class="has-text-centered" style="margin-top: 10px;">Call</p>
+            <img src="./static/images/gifs/image24.gif" alt="" style="width: 98%; height: auto; display: block; margin-left: auto; margin-right: auto;">
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="container">
+        <h4 class="title is-5">Shadowhand</h4>
+        <div id="results-carousel" class="carousel results-carousel">
+          <div class="g_a_1">
+            <p class="has-text-centered" style="margin-top: 10px;">Thumb-up</p>
+            <img src="./static/images/gifs/image31.gif" alt="" style="width: 98%; height: auto; display: block; margin-left: auto; margin-right: auto;">
+          </div>
+          <div class="g_a_2">
+            <p class="has-text-centered" style="margin-top: 10px;">Finger-gun</p>
+            <img src="./static/images/gifs/image32.gif" alt="" style="width: 98%; height: auto; display: block; margin-left: auto; margin-right: auto;">
+          </div>
+          <div class="g_a_3">
+            <p class="has-text-centered" style="margin-top: 10px;">OK</p>
+            <img src="./static/images/gifs/image33.gif" alt="" style="width: 98%; height: auto; display: block; margin-left: auto; margin-right: auto;">
+          </div>
+          <div class="g_a_4">
+            <p class="has-text-centered" style="margin-top: 10px;">Rock&Roll</p>
+            <img src="./static/images/gifs/image34.gif" alt="" style="width: 98%; height: auto; display: block; margin-left: auto; margin-right: auto;">
+          </div>
+          <div class="g_a_5">
+            <p class="has-text-centered" style="margin-top: 10px;">Scissors</p>
+            <img src="./static/images/gifs/image35.gif" alt="" style="width: 98%; height: auto; display: block; margin-left: auto; margin-right: auto;">
+          </div>
+          <div class="g_a_6">
+            <p class="has-text-centered" style="margin-top: 10px;">Call</p>
+            <img src="./static/images/gifs/image36.gif" alt="" style="width: 98%; height: auto; display: block; margin-left: auto; margin-right: auto;">
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="container">
+        <h4 class="title is-5">Myohand</h4>
+        <div id="results-carousel" class="carousel results-carousel">
+          <div class="g_a_1">
+            <p class="has-text-centered" style="margin-top: 10px;">Thumb-up</p>
+            <img src="./static/images/gifs/image25.gif" alt="" style="width: 98%; height: auto; display: block; margin-left: auto; margin-right: auto;">
+          </div>
+          <div class="g_a_2">
+            <p class="has-text-centered" style="margin-top: 10px;">Finger-gun</p>
+            <img src="./static/images/gifs/image26.gif" alt="" style="width: 98%; height: auto; display: block; margin-left: auto; margin-right: auto;">
+          </div>
+          <div class="g_a_3">
+            <p class="has-text-centered" style="margin-top: 10px;">OK</p>
+            <img src="./static/images/gifs/image27.gif" alt="" style="width: 98%; height: auto; display: block; margin-left: auto; margin-right: auto;">
+          </div>
+          <div class="g_a_4">
+            <p class="has-text-centered" style="margin-top: 10px;">Rock&Roll</p>
+            <img src="./static/images/gifs/image28.gif" alt="" style="width: 98%; height: auto; display: block; margin-left: auto; margin-right: auto;">
+          </div>
+          <div class="g_a_5">
+            <p class="has-text-centered" style="margin-top: 10px;">Scissors</p>
+            <img src="./static/images/gifs/image29.gif" alt="" style="width: 98%; height: auto; display: block; margin-left: auto; margin-right: auto;">
+          </div>
+          <div class="g_a_6">
+            <p class="has-text-centered" style="margin-top: 10px;">Call</p>
+            <img src="./static/images/gifs/image30.gif" alt="" style="width: 98%; height: auto; display: block; margin-left: auto; margin-right: auto;">
+          </div>
+        </div>
+    </div>
   </div>
-
 </section>
 
+
+<section class="section">
+  <div class="columns is-centered">
+    <h2 class="title is-3">Real-World Experiments</h2>
+  </div>
+  <div class="container is-max-desktop">
+    <h3 class="title is-4">In-Hand Manipulation</h3>
+      <h4 class="title is-5 has-text-centered">Rotate Cube</h4>
+      <video controls style="width: 98%; height: auto; display: block; margin-left: auto; margin-right: auto;">
+        <source src="./static/videos/realworld/cube.mp4" type="video/mp4">
+      </video>
+      <br>
+      <h4 class="title is-5 has-text-centered">Rotate Orange</h4>
+      <video controls style="width: 98%; height: auto; display: block; margin-left: auto; margin-right: auto;">
+        <source src="./static/videos/realworld/orange.mp4" type="video/mp4">
+      </video>
+      <br>
+      <h4 class="title is-5 has-text-centered">Rotate Cylinder</h4>
+      <video controls style="width: 98%; height: auto; display: block; margin-left: auto; margin-right: auto;">
+          <source src="./static/videos/realworld/cylinder.mp4" type="video/mp4">
+      </video>
+  </div>
+  <br>
+  <br>
+  <div class="container is-max-desktop">
+    <h3 class="title is-4">Gesture Generation</h3>
+    <div id="results-carousel" class="carousel results-carousel">
+      <div class="g_a_1">
+        <p class="has-text-centered" style="margin-top: 10px;">OK</p>
+        <video autoplay loop muted playsinline style="width: 98%; height: auto; display: block; margin-left: auto; margin-right: auto;">
+          <source src="./static/videos/realworld/ok.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="g_a_2">
+        <p class="has-text-centered" style="margin-top: 10px;">Rock&Roll</p>
+        <video autoplay loop muted playsinline style="width: 98%; height: auto; display: block; margin-left: auto; margin-right: auto;">
+          <source src="./static/videos/realworld/rocknroll.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="g_a_3">
+        <p class="has-text-centered" style="margin-top: 10px;">Scissors</p>
+        <video autoplay loop muted playsinline style="width: 98%; height: auto; display: block; margin-left: auto; margin-right: auto;">
+          <source src="./static/videos/realworld/scissors.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="g_a_4">
+        <p class="has-text-centered" style="margin-top: 10px;">Call</p>
+        <video autoplay loop muted playsinline style="width: 98%; height: auto; display: block; margin-left: auto; margin-right: auto;">
+          <source src="./static/videos/realworld/calling.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="g_a_5">
+        <p class="has-text-centered" style="margin-top: 10px;">Finger-gun</p>
+        <video autoplay loop muted playsinline style="width: 98%; height: auto; display: block; margin-left: auto; margin-right: auto;">
+          <source src="./static/videos/realworld/gun.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </div>
+</section>
+    
 
 <!-- <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
